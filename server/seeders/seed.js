@@ -5,9 +5,6 @@ const historySeeds = require("./historySeeds.json");
 
 db.once("open", async () => {
   try {
-    await History.deleteMany({});
-    await User.deleteMany({});
-
     await User.create(userSeeds);
 
     for (let i = 0; i < historySeeds.length; i++) {
