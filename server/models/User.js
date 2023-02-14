@@ -1,8 +1,6 @@
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 
-// import schema from History.js
-const historySchema = require("./History");
 const userSchema = new Schema(
   {
     username: {
@@ -20,13 +18,14 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-
-    // set this to use virtual below
+    savedHistory: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "History",
+      },
+    ],
   },
   {
-    // set savedHistory to be an array of data that adheres to the bookSchema
-    savedHistory: [historySchema],
-
     toJSON: {
       virtuals: true,
     },
