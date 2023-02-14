@@ -1,4 +1,4 @@
-const { Schema } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 // This is a subdocument schema, it won't become its own model but we'll use it as the schema for the User's `savedHistory` array in User.js
 const historySchema = new Schema({
@@ -15,5 +15,6 @@ const historySchema = new Schema({
     type: String,
   },
 });
+const History = model("History", historySchema);
 
-module.exports = historySchema;
+module.exports = History;

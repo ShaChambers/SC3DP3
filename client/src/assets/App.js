@@ -4,7 +4,7 @@ import { Canvas } from "react-three-fiber";
 import "./styles.css";
 
 function Box() {
-  reutrn(
+  return (
     <mesh>
       <boxBufferGeometry attach="geometry" />
       <meshLambertMaterial attach="material" color="hotpink" />

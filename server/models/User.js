@@ -20,11 +20,13 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    // set savedHistory to be an array of data that adheres to the bookSchema
-    savedHistory: [historySchema],
+
     // set this to use virtual below
   },
   {
+    // set savedHistory to be an array of data that adheres to the bookSchema
+    savedHistory: [historySchema],
+
     toJSON: {
       virtuals: true,
     },

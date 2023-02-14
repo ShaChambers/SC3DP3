@@ -8,7 +8,7 @@ db.once("open", async () => {
     await User.create(userSeeds);
 
     for (let i = 0; i < historySeeds.length; i++) {
-      const { _id, person } = await History.create(historySeeds[i]);
+      const { _id, person } = await User.create(historySeeds[i]);
       const user = await User.findOneAndUpdate(
         { username: person },
         {
