@@ -9,14 +9,6 @@ db.once("open", async () => {
 
     for (let i = 0; i < historySeeds.length; i++) {
       const { _id, person } = await History.create(historySeeds[i]);
-      const user = await User.findOneAndUpdate(
-        { username: person },
-        {
-          $addToSet: {
-            thoughts: _id,
-          },
-        }
-      );
     }
   } catch (err) {
     console.error(err);
