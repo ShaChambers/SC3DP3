@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 
-// import schema from Book.js
+// import schema from History.js
 const historySchema = require('./History');
 const userSchema = new Schema(
     {
@@ -20,7 +20,7 @@ const userSchema = new Schema(
         type: String,
         required: true,
       },
-         // set savedBooks to be an array of data that adheres to the bookSchema
+         // set savedHistory to be an array of data that adheres to the bookSchema
     savedHistory: [historySchema],
     // set this to use virtual below
     {
@@ -28,6 +28,7 @@ const userSchema = new Schema(
         virtuals: true,
       },
     }
+  }
   );
   
   // hash user password
@@ -45,7 +46,7 @@ const userSchema = new Schema(
     return bcrypt.compare(password, this.password);
   };
   
- // when we query a user, we'll also get another field called `historyCount` with the number of saved books we have
+ // when we query a user, we'll also get another field called `historyCount` with the number of saved historical figures we have
 userSchema.virtual('historyCount').get(function () {
     return this.savedHistory.length;
   });
