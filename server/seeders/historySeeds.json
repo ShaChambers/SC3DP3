@@ -1,0 +1,32 @@
+[
+    {
+      "person": "Tope Awotona",
+      "description": "Founder and CEO of Calendly, a popular scheduling and appointment booking software. He founded the company in 2013 with the goal of simplifying scheduling and reducing the back-and-forth emails that come with trying to coordinate meeting times. Awotona is a seasoned entrepreneur with a background in technology and a passion for building products that make people's lives easier. Under his leadership, Calendly has grown into one of the most successful scheduling tools on the market, helping millions of people schedule appointments and meetings with ease.",
+      "link": "https://www.linkedin.com/in/bawotona"  
+    },
+    {
+        "person": "Roy L. Clay Sr.",
+        "description": "Computer programmer, entrepreneur, and civil rights activist. He is known as the Black Godfather of Silicon Valley for his role in creating and promoting technology companies founded by African Americans. Born in Louisiana in 1929, Clay received degrees in mathematics and electrical engineering, and later became a pioneering computer programmer and computer science educator. He also co-founded several technology companies, including computer software firm RAMIS, and worked to create opportunities for Black people in the tech industry. Through his work and advocacy, Clay made significant contributions to the growth of the technology industry and paved the way for future generations of Black tech entrepreneurs and innovators.",
+        "link": "https://en.wikipedia.org/wiki/Roy_Clay"  
+      },
+      {
+        "person": "Ursula Burns",
+        "description": "American business executive. She was the CEO of Xerox Corporation from 2009 to 2016, and became the first black woman to lead a Fortune 500 company. Prior to her appointment as CEO, Burns held various executive positions within the company, including Vice President of Corporate Strategic Services, President of the Document Systems and Solutions Group, and Executive Vice President of Xerox Corporation. Burns has been recognized for her leadership, and was named to Forbes' list of 'The World's 100 Most Powerful Women' multiple times. She is also a member of the board of directors of several companies, including Uber and VEON Ltd.",
+        "link": "https://en.wikipedia.org/wiki/Roy_Clay"  
+      },
+      {
+        "person": "Timnit Gebru",
+        "description": "Computer scientist and researcher who is best known for her work in the field of artificial intelligence, specifically in the area of fairness, accountability, and transparency in AI systems. She received her PhD in computer science from Stanford University and was an AI researcher at the Ethical AI team at Google. Gebru has published numerous papers on the ethical implications of AI and has been recognized for her contributions to the field with awards and accolades from various organizations and institutions. She is also a strong advocate for diversity and inclusion in technology and has been a vocal critic of the industry's lack of representation and equity.",
+        "link": "https://en.wikipedia.org/wiki/Timnit_Gebru"  
+      },
+      {
+        "person": "David Steward",
+        "description": "American entrepreneur and philanthropist. He is the co-founder and chairman of World Wide Technology, a global technology company that provides a wide range of products and services, including hardware, software, and services. He founded the company in 1990 and has led it to become one of the largest black-owned businesses in the United States. Steward has been recognized for his leadership and philanthropy, receiving numerous awards and honors. He is a strong advocate for diversity and inclusion in the tech industry, and has made significant contributions to organizations that support education and entrepreneurship in underserved communities.",
+        "link": "https://en.wikipedia.org/wiki/David_Steward"  
+      },
+      {
+        "person": "William Spruill",
+        "description": "co-founder and former CEO of Global Data Consortium (GDC) (recently sold for $300M), the most widely channel distributed global identity verification platform providing data driven KYC (Know Your Customer) solutions for more than 70 countries through a single API. Over the life of the organization, he oversaw the formation of more than 50 enterprise channel relationships and established a cohort of more than 120 data suppliers creating a unique consortium business model that drove more than $70 million in revenues.",
+        "link": "https://en.wikipedia.org/wiki/David_StewardWilliam_(Bill)_Spruill"  
+      }
+]
