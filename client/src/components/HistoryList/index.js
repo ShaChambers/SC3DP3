@@ -14,11 +14,11 @@ const HistoryList = ({
 
   return (
     <div>
-      {showPerson && <h3>{person}</h3>}
+      {/* {showPerson && <h3>{person}</h3>} */}
       {history &&
         history.map((history) => (
           <div key={history._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+            {/* <h4 className="card-header bg-primary text-light p-2 m-0">
               {showPerson ? (
                 <Link className="text-light" to={`/people/${history.person}`}>
                   {history.person} <br />
@@ -42,7 +42,7 @@ const HistoryList = ({
               to={`/history/${history._id}`}
             >
               Placeholder Text
-            </Link>
+            </Link> */}
           </div>
         ))}
       ;
