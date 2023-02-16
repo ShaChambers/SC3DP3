@@ -7,7 +7,155 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0 0 0.5rem;
+  line-height: 4.25;
+  color: #e17612;
+  text-align: center;
+}
+
+
+/*input,
+select,
+textarea,
+button {
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.5;
+}*/
+
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+a {
+  color: #1b89bc;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+
+.bg-primary {
+  background-color: #e17612 !important;
+}
+
+
+.bg-danger {
+  background-color: #e64c66 !important;
+}
+
+
+.bg-light {
+  background-color: #d9e9e8 !important;
+}
+
+
+.bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  outline: none;
+  color: #1a1a1a;
+  background-color: #aeaeae;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  outline: none;
+  color: #1a1a1a;
+  background-color: #aeaeae;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+
+/*form {
+  margin: 0 auto;
+  text-align: center;
+}*/
+main{
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0 0 0.5rem;
+  line-height: 4.25;
+ /* background-color: #e17612;*/
+  text-align: center;
+}
+
+
+body{
+  background: linear-gradient(90deg, purple, blue);
+}
+
+
+
