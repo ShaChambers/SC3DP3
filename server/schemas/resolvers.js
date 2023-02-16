@@ -7,9 +7,8 @@ const resolvers = {
     users: async () => {
       return User.find().populate("history");
     },
-    history: async (parent, { Object_id }) => {
-      const params = Object_id ? { username } : {};
-      return History.find(params).sort({ createdAt: -1 });
+    history: async (parent) => {
+      return History.find().sort({ createdAt: -1 });
     },
   },
 

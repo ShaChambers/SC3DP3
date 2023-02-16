@@ -24,3 +24,12 @@ export const ADD_USER = gql`
   }
 `;
 //mutation for add history
+export const ADD_HISTORIES = gql`
+  mutation addHistory($histories: String!) {
+    addHistory(histories: $histories) {
+      _id
+      person
+      description
+    }
+  }
+`;

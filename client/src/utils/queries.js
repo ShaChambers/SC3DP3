@@ -8,11 +8,12 @@ export const QUERY_USER = gql`
   }
 `;
 export const QUERY_HISTORIES = gql`
-  query getHistories {
-    histories {
+  query History {
+    history {
       _id
-      person
       description
+      person
+      link
     }
   }
 `;

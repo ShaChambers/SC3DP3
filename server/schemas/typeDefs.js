@@ -24,7 +24,7 @@ const typeDefs = gql`
 
   type Query {
     users: [User]
-    history(person: String): [History]
+    history: [History]
   }
 
   type Mutation {
