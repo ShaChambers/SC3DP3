@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const HistoryList = ({
   history,
@@ -13,40 +17,20 @@ const HistoryList = ({
   }
 
   return (
-    <div>
-      {showPerson && <h3>{person}</h3>}
+    <Row>
       {history &&
         history.map((history) => (
-          <div key={history._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
-              {showPerson ? (
-                <Link className="text-light" to={`/people/${history.person}`}>
-                  {history.person} <br />
-                  <span style={{ fontSize: "1rem" }}>
-                    {history.description}
-                  </span>
-                </Link>
-              ) : (
-                <>
-                  <span style={{ fontSize: "1rem" }}>
-                    {history.description}
-                  </span>
-                </>
-              )}
-            </h4>
-            <div className="card-body bg-light p-2">
-              <p>{history.description}</p>
-            </div>
-            <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/history/${history._id}`}
-            >
-              Placeholder Text
-            </Link>
-          </div>
+          <Col xs={12} lg={4}>
+            <Card style={{ marginTop: 10 }} key={history._id}>
+              <Card.Body>
+                <Card.Title>{history.person}</Card.Title>
+                <Card.Text>{history.description}</Card.Text>
+                <Card.Link href={history.link}>Learn More</Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
         ))}
-      ;
-    </div>
+    </Row>
   );
 };
 

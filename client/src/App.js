@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Container from "react-bootstrap/esm/Container";
 
 // import Header from './components/Header';
 // import Footer from './components/Footer';
@@ -43,9 +44,9 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
+        
           {/* <Header /> */}
-          <div className="container">
+          <Container>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
@@ -62,9 +63,8 @@ function App() {
                 element={<SingleThought />}
   />*/}
             </Routes>
-          </div>
+          </Container>
           {/* <Footer /> */}
-        </div>
       </Router>
     </ApolloProvider>
   );
