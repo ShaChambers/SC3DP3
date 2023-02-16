@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 // import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // import { Canvas } from "@react-three/fiber";
 // import { OrbitControls, Stars } from "@react-three/drei";
