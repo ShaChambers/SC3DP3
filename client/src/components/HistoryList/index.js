@@ -18,6 +18,7 @@ const HistoryList = ({
       {history &&
         history.map((history) => (
           <div key={history._id} className="card mb-3">
+            <h3>Hello</h3>
             {/* <h4 className="card-header bg-primary text-light p-2 m-0">
               {showPerson ? (
                 <Link className="text-light" to={`/people/${history.person}`}>
@@ -45,7 +46,6 @@ const HistoryList = ({
             </Link> */}
           </div>
         ))}
-      ;
     </div>
   );
 };
