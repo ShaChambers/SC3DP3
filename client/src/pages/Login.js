@@ -3,21 +3,26 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 
+
 import Auth from '../utils/auth';
+
 
 const Login = (props) => {
     const [formState, setFormState] = useState({ email: '', password: '' });
     const [login, { error, data }] = useMutation(LOGIN_USER);
 
+
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
+
 
         setFormState({
             ...formState,
             [name]: value,
         });
     };
+
 
     // submit form
     const handleFormSubmit = async (event) => {
@@ -28,10 +33,12 @@ const Login = (props) => {
                 variables: { ...formState },
             });
 
+
             Auth.login(data.login.token);
         } catch (e) {
             console.error(e);
         }
+
 
         // clear form values
         setFormState({
@@ -40,11 +47,12 @@ const Login = (props) => {
         });
     };
 
+
     return (
         <main className="flex-row justify-center mb-4">
             <div className="col-12 col-lg-10">
                 <div className="card">
-                    <h4 className="card-header bg-dark text-light p-2">Login</h4>
+                    <h2 className="card-header text-light p-2">Login</h2>
                     <div className="card-body">
                         {data ? (
                             <p>
@@ -89,5 +97,6 @@ const Login = (props) => {
         </main>
     );
 };
+
 
 export default Login;
