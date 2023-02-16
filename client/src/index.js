@@ -1,8 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+// import { Canvas } from "@react-three/fiber";
+// import { OrbitControls, Stars } from "@react-three/drei";
+// import { Physics, usePlane, useBox } from "@react-three/cannon";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

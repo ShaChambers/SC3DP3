@@ -1,11 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Card from './components/card/card';
+import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <Card/>
-  );
+  return <Home />;
 }
 
 export default App;
