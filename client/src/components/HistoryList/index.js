@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card";
 
 const HistoryList = ({
   history,
@@ -12,18 +13,17 @@ const HistoryList = ({
     return <h3>Nothing here... Yet</h3>;
   }
 
-  // _id
-  //     description
-  //     person
-  //     link
-
   return (
     <div>
       {history &&
         history.map((history) => (
-          <div key={history._id} className="card mb-3">
-            <h3>Hello</h3>
-          </div>
+          <Card key={history._id} style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title>{history.person}</Card.Title>
+              <Card.Text>{history.description}</Card.Text>
+              <Card.Link href={history.link}>Learn More</Card.Link>
+            </Card.Body>
+          </Card>
         ))}
     </div>
   );
