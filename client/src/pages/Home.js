@@ -22,7 +22,7 @@ const Home = () => {
         <Container>
           <h1>Noir</h1>
         </Container>
-
+        
         <Navbar.Brand href="/">Home</Navbar.Brand>
         <Navbar.Brand href="/Login">Login</Navbar.Brand>
         <Navbar.Brand href="/signup">Register</Navbar.Brand>
