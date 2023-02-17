@@ -50,8 +50,8 @@ const Signup = () => {
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
-        <div className="card">
-          <h2 className="card-header text-light p-2 style={{backgroundColor: '#DF6943'}}">Sign Up</h2>
+        <div className="signup">
+          <h2 className="card-header text-dark p-2">Sign Up</h2>
           <div className="card-body">
             {data ? (
               <p>
