@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { useQuery } from "@apollo/client";
 import Row from "react-bootstrap/Row";
+import Navbar from "react-bootstrap/Navbar";
 
 import HistoryList from "../components/HistoryList";
 // import HistoryForm from "../components/HistoryForm";
 import { QUERY_HISTORIES } from "../utils/queries";
 import Col from "react-bootstrap/esm/Col";
+import Container from "react-bootstrap/esm/Container";
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_HISTORIES);
@@ -16,12 +18,18 @@ const Home = () => {
   console.log(history);
   return (
     <Row>
-      <div
-        className="col-12 col-md-10 mb-3 p-3"
-        style={{ border: "1px dotted #1a1a1a" }}
-      >
-        {/* <ThoughtForm /> */}
-      </div>
+      <Navbar>
+        <Container>
+          <h1>Noir</h1>
+        </Container>
+
+        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Brand href="/Login">Login</Navbar.Brand>
+        <Navbar.Brand href="/signup">Register</Navbar.Brand>
+        <Navbar.Brand href="/Login">Sign Out</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      </Navbar>
+      <div>{/* <ThoughtForm /> */}</div>
       <Col sm={12}>
         {loading ? (
           <div>Loading...</div>
