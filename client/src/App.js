@@ -12,6 +12,8 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Container from "react-bootstrap/esm/Container";
+import Profile from "./pages/Profile";
+import Home2 from "./pages/Home2";
 
 // import Header from './components/Header';
 // import Footer from './components/Footer';
@@ -44,14 +46,15 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        
-          {/* <Header /> */}
-          <Container>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-              {/* <Route 
+        {/* <Header /> */}
+        <Container>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home2" element={<Home2 />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/Profile" element={<Profile />} />
+            {/* <Route 
                 path="/me"
                 element={<Profile />}
               />
@@ -62,9 +65,9 @@ function App() {
               <Route path="/thoughts/:thoughtId" 
                 element={<SingleThought />}
   />*/}
-            </Routes>
-          </Container>
-          {/* <Footer /> */}
+          </Routes>
+        </Container>
+        {/* <Footer /> */}
       </Router>
     </ApolloProvider>
   );
